@@ -1,0 +1,87 @@
+// Start footer
+footer{
+    background: $black;
+    .section1{
+        background: url("../images/footer-bg-1.jpg") no-repeat center;
+        background-size: cover;
+        .box{
+            background: rgba(0, 0, 0, 0.6);
+            height: 450px;
+            .container{
+                .row{
+                    .content{
+                        .caption{
+                            font-size: 35px;
+                            @include font-style($font-b);
+                            @include media-min-lg{
+                                font-size: 50px;
+                            }
+                        }
+                        .para{
+                            font-size: 16px;
+                            line-height: 30px;
+                            @include font-style($font-mb);
+                            @include media-min-lg{
+                                font-size: 18px;
+                            }
+                        }
+                        @include media-min-lg{
+                            width: 50%;
+                        }
+                    }
+                    .button{
+                        .btn{
+                            font-size: 16px;
+                            color: $white;
+                            background-color: $secondary;
+                            @include font-style($font-mb);
+                            @include media-min-lg{
+                                font-size: 18px;
+                            }
+                        }
+                        @include media-min-lg{
+                            width: 50%;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+    .section2{
+        .container{
+            .row{
+                .para{
+                    .text{
+                        color: $grey;
+                    }
+                    @include media-min-md{
+                        text-align: left;
+                    }
+                }
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            color: $white;
+                            &:hover{
+                                color: $secondary;
+                            }
+                            &::after{
+                                content: '';
+                                width: 0px;
+                                height: 2px;
+                                margin-top: 3px;
+                                display: block;
+                                transition: 0.5s;
+                            }
+                            &:hover::after{
+                                width: 40px;
+                                background-color: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End footer

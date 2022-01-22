@@ -1,0 +1,179 @@
+// Start header
+header{
+    nav{
+        height: 90px;
+        background: $black;
+        .content{
+            .menu-icon{
+                font-size: 27px;
+                width: 50px;
+            }
+            .logo{
+                .navbar-brand{
+                    font-size: 27px;
+                    @include font-style($font-b);
+                    @include media-min-sm{
+                        font-size: 30px;
+                    }
+                }
+            }
+            .links{
+                position: absolute;
+                top: 75px;
+                left: -110%;
+                transition: all 0.3s ease;
+                background: $black;
+                @include font-style($font-m);
+                .nav-item{
+                    .nav-link{
+                        font-size: 16px;
+                    }
+                    @include media-min-lg{
+                        .nav-link::after{
+                            content: '';
+                            width: 0px;
+                            height: 2px;
+                            margin-top: 3px;
+                            display: block;
+                            transition: 0.5s;
+                        }
+                        .live::after, .nav-link:hover::after{
+                            width: 25px;
+                            background-color: $secondary;
+                        }
+                    }
+                }
+                @include media-min-lg{
+                    position: unset;
+                    background: none;
+                }
+            }
+            .icon{
+                font-size: 18px;
+            }
+            @include media-max-lg{
+                #show-menu:checked ~ .links{
+                   left: 0%;
+                }
+            }
+        }
+        @include media-min-lg{
+            background: transparent;
+        }
+    }
+    @include media-max-md{
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+    }
+}
+// End header
+// Start banner
+.banner{
+    height: 690px;
+    .img{
+        z-index: -2;
+        top: 80px;
+        background: url('../images/hero5-1.jpg') no-repeat center;
+        height: 700px;
+        background-size: cover;
+        @include media-min-sm{
+            height: 650px;
+        }
+        @include media-min-md{
+            height: 660px;
+        }
+        @include media-min-lg{
+            top: 0%;
+            height: 800px;
+        }
+        @include media-min-xl{
+            height: 900px;
+        }
+    }
+    .color{
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7));
+        z-index: -1;
+        top: 80px;
+        height: 700px;
+        @include media-min-sm{
+            height: 650px;
+        }
+        @include media-min-md{
+            height: 660px;
+        }
+        @include media-min-lg{
+            top: 0%;
+            height: 800px;
+        }
+        @include media-min-xl{
+            height: 900px;
+        }
+    }
+    .box{
+        .content{
+            .caption{
+                font-size: 38px;
+                @include font-style($font-b);
+                @include media-min-lg{
+                    font-size: 60px;
+                }
+            }
+            .para{
+                font-size: 16px;
+                line-height: 30px;
+                @include font-style($font-m);
+                @include media-min-lg{
+                    font-size: 18px;
+                }
+            }
+            .btn{
+                font-size: 16px;
+                color: $white;
+                background-color: $secondary;
+                // box-shadow : inset 0 0 0 0 0 $white;
+                @include font-style($font-m);
+                @include media-min-lg{
+                    font-size: 18px;
+                }
+            }
+        }
+        .form{
+            width: 38%;
+            form{
+                .heading{
+                    font-size: 20px;
+                    @include font-style($font-b);
+                    @include media-min-lg{
+                        font-size: 25px;
+                    }
+                }
+                .para{
+                    display: none;
+                    @include media-min-lg{
+                        display: block;
+                        font-size: 18px;
+                        @include font-style($font-m);
+                    }
+                }
+                .btn{
+                    font-size: 20px;
+                    @include font-style($font-b);
+                }
+            }
+        }
+    }
+    @include media-min-sm{
+        height: 640px;
+    }
+    @include media-min-md{
+        height: 650px;
+    }
+    @include media-min-lg{
+        height: 705px;
+    }
+    @include media-min-xl{
+        height: 810px;
+    }
+}
+// End banner
