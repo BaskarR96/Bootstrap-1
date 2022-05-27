@@ -1,572 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Start head tag -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Start external links -->
-    <!-- Start font links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-    <!-- End font links -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./public/css/style.min.css">
-    <link rel="stylesheet" href="./public/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="./public/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="./public/css/bootstrap-utilities.min.css">
-    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
-    <!-- End external links -->
-    <title>Bootstrap 01</title>
-</head>
-<!-- End head tag -->
-<!-- Start body tag -->
-<body>
-    <!-- Start header tag -->
-    <section class="header section1">
-        <header>
-            <nav class="navbar navbar-expand-lg text-white">
-                <div class="content p-lg-0 container">
-                    <div class="logo">
-                        <a class="navbar-brand text-white p-0 m-0" href="#">Gentium</a>
+    <!-- Start head tag -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Start external links -->
+        <!-- Start font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <!-- End font links -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <link rel="stylesheet" href="./public/css/style.min.css">
+        <link rel="stylesheet" href="./public/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="./public/css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="./public/css/bootstrap-utilities.min.css">
+        <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+        <!-- End external links -->
+        <title>Gentium</title>
+    </head>
+    <!-- End head tag -->
+
+    <!-- Start body tag -->
+    <body>
+        <!-- Start header tag -->
+        <section class="header section1">
+            <header>
+                <nav class="navbar navbar-expand-lg text-white">
+                    <div class="content p-lg-0 container">
+                        <div class="logo">
+                            <a class="navbar-brand text-white p-0 m-0" href="#">Gentium</a>
+                        </div>
+                        <input class="d-none" type="checkbox" id="show-menu">
+                        <label for="show-menu" class="menu-icon text-center d-lg-none"><i class="fas fa-bars"></i></label>
+                        <ul
+                            class="navbar-nav container-fluid align-items-center text-center p-3 p-0 p-lg-0 text-white links justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link text-white ps-lg-0 live" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white ps-lg-2 ps-xl-4" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white ps-lg-2 ps-xl-4" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white ps-lg-2 ps-xl-4" href="#">Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white ps-lg-2 ps-xl-4" href="#">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white ps-lg-2 ps-xl-4" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white ps-lg-2 ps-xl-4" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="icon d-none d-lg-flex ms-lg-5 mb-lg-2">
+                            <a href="" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="text-white px-lg-4"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="text-white"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
-                    <input class="d-none" type="checkbox" id="show-menu">
-                    <label for="show-menu" class="menu-icon text-center d-lg-none"><i class="fas fa-bars"></i></label>
-                    <ul class="navbar-nav container-fluid align-items-center text-center p-3 p-0 p-lg-0 text-white links justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link text-white ps-lg-0 live" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white ps-lg-2 ps-xl-4" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white ps-lg-2 ps-xl-4" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white ps-lg-2 ps-xl-4" href="#">Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white ps-lg-2 ps-xl-4" href="#">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white ps-lg-2 ps-xl-4" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white ps-lg-2 ps-xl-4" href="#">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="icon d-none d-lg-flex ms-lg-5 mb-lg-2">
-                        <a href="" class="text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="" class="text-white px-lg-4"><i class="fab fa-twitter"></i></a>
-                        <a href="" class="text-white"><i class="fab fa-instagram"></i></a>
+                </nav>
+            </header>
+            <section class="banner d-flex align-items-center container">
+                <div class="img position-absolute start-0 w-100 pb-3 pb-xl-0"></div>
+                <div class="color position-absolute start-0 w-100"></div>
+                <div class="box d-flex justify-content-between w-100">
+                    <div class="content my-5 me-md-2 text-white">
+                        <h1 class="caption pb-3 pt-5 mb-0">We're a Results Driven<br>digital agency.</h1>
+                        <p class="para my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do<br />eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <buton class="btn btn-white rounded-1 mt-3 py-3 px-4">Getting Started Today</buton>
+                    </div>
+                    <div class="form d-none d-md-block text-center bg-white rounded px-5 py-5">
+                        <form action="/action_page.php ">
+                            <h2 class="heading py-3">Book Appointment</h2>
+                            <p class="para text-secondary">Performance based seo services<br>Try our services today!</p>
+                            <div class="mb-4 mt-3">
+                                <input type="text" class="form-control bg-light border-0 py-3" placeholder="Name"
+                                    name="name">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" class="form-control bg-light border-0 py-3" placeholder="Email"
+                                    name="email">
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" class="form-control bg-light border-0 py-3" placeholder="Website"
+                                    name="website">
+                            </div>
+                            <button type="submit" class="btn btn-danger border-0 rounded-0 w-100 p-3 mb-3">Submit
+                                Now</button>
+                        </form>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <section class="banner d-flex align-items-center container">
-            <div class="img position-absolute start-0 w-100 pb-3 pb-xl-0"></div>
-            <div class="color position-absolute start-0 w-100"></div>
-            <div class="box d-flex justify-content-between w-100">
-                <div class="content my-5 me-md-2 text-white">
-                    <h1 class="caption pb-3 pt-5 mb-0">We're a Results Driven<br>digital agency.</h1>
-                    <p class="para my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do<br/>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <buton class="btn btn-white rounded-1 mt-3 py-3 px-4">Getting Started Today</buton>
-                </div>
-                <div class= "form d-none d-md-block text-center bg-white rounded px-5 py-5">
-                    <form action="/action_page.php ">
-                        <h2 class="heading py-3">Book Appointment</h2>
-                        <p class="para text-secondary">Performance based seo services<br>Try our services today!</p>
-                        <div class="mb-4 mt-3">
-                          <input type="text" class="form-control bg-light border-0 py-3" placeholder="Name" name="name">
-                        </div>
-                        <div class="mb-4">
-                          <input type="email" class="form-control bg-light border-0 py-3"  placeholder="Email" name="email">
-                        </div>
-                        <div class="mb-4">
-                            <input type="text" class="form-control bg-light border-0 py-3" placeholder="Website" name="website">
-                        </div>
-                        <button type="submit" class="btn btn-danger border-0 rounded-0 w-100 p-3 mb-3">Submit Now</button>
-                    </form> 
-                </div>
-            </div>
+            </section>
         </section>
-    </section>
-    <!-- End header tag -->
-    <!-- Start main tag -->
-    <main>
-        <!-- Start section1 -->
-        <section class="section1 py-3 px-lg-0 py-lg-5">
-            <div class="brand container my-5 my-lg-4">
-                <div class="row">
-                    <div class="img text-center text-lg-start col-6 col-lg-2 col-xl-2 pb-3 pb-xl-0">
-                        <img src="./public/images/01.png" alt="">
-                    </div>
-                    <div class="img text-center col-6 col-lg-2 col-xl-2 pb-3 pb-xl-0">
-                        <img src="./public/images/02.png" alt="">
-                    </div>
-                    <div class="img text-center col-6 col-lg-2 col-xl-2 pb-3 pb-xl-0 ms-lg-auto m-xl-0">
-                        <img src="./public/images/03.png" alt="">
-                    </div>
-                    <div class="img text-center col-6 col-lg-2 col-xl-2 pb-3 pb-xl-0 me-lg-auto m-xl-0">
-                        <img src="./public/images/04.png" alt="">
-                    </div>
-                    <div class="img text-center col-6 col-lg-2 col-xl-2">
-                        <img src="./public/images/05.png" alt="">
-                    </div>
-                    <div class="img text-center text-lg-end col-6 col-lg-2 col-xl-2">
-                        <img src="./public/images/06.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End section1 -->
-        <!-- Start section2 -->
-        <section class="section2 container py-3 px-lg-0 py-lg-4">
-            <div class="content text-center my-5 my-lg-4">
-                <h1 class="heading pb-3 m-0">Digital Marketing Services</h1>
-                <p class="para text-secondary pt-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing sed do eiusmod tempor<br/>Lorem ipsum dolor sit amet, c adipiscing sed do eiusmod tempor.</p>
-            </div>
-        </section>
-        <!-- End section2 -->
-        <!-- Start section3 -->
-        <section class="section3 container px-lg-0 pb-sm-5 mt-sm-4">
-            <div class="card-box row mx-auto">
-                <div class="card border-0 rounded-0 col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
-                    <div class="content text-center h-100">
-                        <i class="fas fa-chess-knight"></i>
-                        <h3 class="heading">Digital Strategy</h3>
-                        <p class="para m-0">Lorem ipsum dolor sit amet elit. Tempore corrupti temporibus fuga earum asperiores.</p>
-                    </div>
-                </div>
-                <div class="card border-0 rounded-0 col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
-                    <div class="content text-center h-100">
-                        <i class="far fa-window-maximize"></i>
-                        <h3 class="heading">UX Design</h3>
-                        <p class="para m-0">Lorem ipsum dolor sit amet elit. Tempore corrupti temporibus fuga earum asperiores.</p>
-                    </div>
-                </div>
-                <div class="card border-0 rounded-0 col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
-                    <div class="content text-center h-100">
-                        <i class="fas fa-chart-line"></i>
-                        <h3 class="heading">Product Design</h3>
-                        <p class="para m-0">Lorem ipsum dolor sit amet elit. Tempore corrupti temporibus fuga earum asperiores.</p>
-                    </div>
-                </div>
-                <div class="card border-0 rounded-0 col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
-                    <div class="content text-center h-100">
-                        <i class="far fa-clipboard"></i>
-                        <h3 class="heading">Content Strategy</h3>
-                        <p class="para m-0">Lorem ipsum dolor sit amet elit. Tempore corrupti temporibus fuga earum asperiores.</p>
-                    </div>
-                </div>
-                <div class="card border-0 rounded-0 col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
-                    <div class="content text-center h-100">
-                        <i class="fas fa-pencil-ruler"></i>
-                        <h3 class="heading">Design & Concept</h3>
-                        <p class="para m-0">Lorem ipsum dolor sit amet elit. Tempore corrupti temporibus fuga earum asperiores.</p>
-                    </div>
-                </div>
-                <div class="card border-0 rounded-0 col-12 col-sm-6 col-lg-4">
-                    <div class="content text-center h-100">
-                        <i class="far fa-comments"></i>
-                        <h3 class="heading">Social Media</h3>
-                        <p class="para m-0">Lorem ipsum dolor sit amet elit. Tempore corrupti temporibus fuga earum asperiores.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End section3 -->
-        <!-- Start section4 -->
-        <section class="section4 d-md-flex bg-dark mt-5">
-            <div class="content container d-flex flex-column justify-content-between text-white">
-                <h3 class="caption p-xl-0 mb-0">We're A Dynamic Team Of Marketing Experts.</h3>
-                <p class="para">Nullam sollicitudin nisl at nunc tempor pulvinar. Quisque gravida, tellus eget fermentum tristique, neque ligula placerat diamAenean placerat.<br/><br/>Enim adminim veniam, quis nostrud tation ullamco laboris consectetur adipiscing elit.</p>
-                <button class="btn btn-white rounded-1 py-3 px-5">Read Our Story</button>
-            </div>
-            <div class="image">
-                <div class="icon d-flex justify-content-center align-items-center w-100 h-100">
-                    <i class="fas fa-play-circle"></i>
-                </div>
-            </div>
-        </section>
-        <!-- End section4 -->
-        <!-- Start section5 -->
-        <section class="section5 container px-lg-0 py-lg-4 mt-xl-5">
-            <div class="content text-center my-5 my-lg-4">
-                <h1 class="heading pb-3 m-0">Selected Projects</h1>
-                <p class="para text-secondary pt-3 m-0">Lorem ipsum dolor sitvehicula felis, dolor sit amet, adipiscin <br />quis volutpat estni nuncase.</p>
-            </div>
-        </section>
-        <!-- End section5 -->
-        <!-- Start section6 -->
-        <section class="section6 container px-lg-0 pb-3 pb-lg-5 mt-sm-4 mb-sm-5">
-            <div class="card-box">
-                <div class="card my-3 my-sm-0 w-100">
-                    <img class="card-img-top product" src="./public/images/index.jpg" alt="">
-                    <div class="card-img-overlay content text-white flex-column justify-content-center align-items-center">
-                        <h3 class="card-title">Product Design</h3>
-                        <p class="card-text">Design / Marketing</p>
-                    </div>
-                </div>
-                <div class="card my-3 my-sm-0 w-100">
-                    <img class="card-img-top product" src="./public/images/index2.jpg" alt="">
-                    <div class="card-img-overlay content text-white flex-column justify-content-center align-items-center">
-                        <h3 class="card-title">Minimal Watche</h3>
-                        <p class="card-text">App / Design</p>
-                    </div>
-                </div>
-                <div class="card my-3 my-sm-0 w-100">
-                    <img class="card-img-top product" src="./public/images/index3.jpg" alt="">
-                    <div class="card-img-overlay content text-white flex-column justify-content-center align-items-center">
-                        <h3 class="card-title">Red Jacket</h3>
-                        <p class="card-text">Architecture / Design</p>
-                    </div>
-                </div>
-                <div class="card my-3 my-sm-0 w-100">
-                    <img class="card-img-top product" src="./public/images/index4.jpg" alt="">
-                    <div class="card-img-overlay content text-white flex-column justify-content-center align-items-center">
-                        <h3 class="card-title">Nike Setup</h3>
-                        <p class="card-text">Architecture / Marketing</p>
-                    </div>
-                </div>
-                <div class="card my-3 my-sm-0 w-100">
-                    <img class="card-img-top product" src="./public/images/index5.jpg" alt="">
-                    <div class="card-img-overlay content text-white flex-column justify-content-center align-items-center">
-                        <h3 class="card-title">Porsche Panamera</h3>
-                        <p class="card-text">Design / Marketing</p>
-                    </div>
-                </div>
-                <div class="card mt-3 my-sm-0 w-100">
-                    <img class="card-img-top product" src="./public/images/index6.jpg" alt="">
-                    <div class="card-img-overlay content text-white flex-column justify-content-center align-items-center">
-                        <h3 class="card-title">Nike Red Product</h3>
-                        <p class="card-text">Concept / Design</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End section6 -->
-        <!-- Start section7 -->
-        <section class="section7 text-white text-center px-lg-0 mb-0 mt-5 mb-lg-5">
-            <div class="box">
-                <div class="content container px-3 px-md-5 py-5">
-                    <h3 class="heading pb-3 m-0 py-lg-5">People Seems To Like Us</h3>
-                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-                        <!-- Indicators/dots -->
-                        <div class="carousel-indicators mb-lg-3">
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active me-3"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="me-3"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                        </div>
-                        <!-- The slideshow/carousel -->
-                        <div class="carousel-inner mb-4">
-                            <div class="carousel-item w-100 active">
-                                <div class="box1 mx-auto ">
-                                    <p class="para px-0 pb-4 m-0 mx-xl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,liquip ex ea commodo consequat.</p>
-                                    <div class="people d-flex flex-column justify-content-center align-items-center">
-                                        <img src="./public/images/people.jpg" alt="Los Angeles" class=" rounded-circle people-img">
-                                        <p class="para mb-0 mt-1 mt-lg-4">DYLAN GILLIS</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item w-100">
-                                <div class="box1 mx-auto">
-                                    <p class="para px-0 pb-4 m-0 mx-xl-5">Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                                    <div class="people d-flex flex-column justify-content-center align-items-center">
-                                        <img src="./public/images/people.jpg" alt="Los Angeles" class=" rounded-circle people-img">
-                                        <p class="para mb-0 mt-1 mt-lg-4">LUCA BRAVO</p>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="carousel-item w-100">
-                                <div class="box1 mx-auto">
-                                    <p class="para px-0 pb-4 m-0 mx-xl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,liquip ex ea commodo consequat.</p>
-                                    <div class="people d-flex flex-column justify-content-center align-items-center">
-                                        <img src="./public/images/people.jpg" alt="Los Angeles" class=" rounded-circle people-img">
-                                        <p class="para mb-0 mt-1 mt-lg-4">MALTE WINGEN</p>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End section7 -->
-        <!-- Start section8 -->
-        <section class="section8 container py-3 px-lg-0 py-lg-4">
-            <div class="content text-center my-2 my-lg-4">
-                <h1 class="heading pb-3 m-0 mt-4">Latest News.</h1>
-                <p class="para text-secondary pt-3 m-0">Sed hendrerit vehicula felis, dolor sit amet, adipiscin <br> quis volutpat estni nuncase.</p>
-            </div>
-        </section>
-        <!-- End section8 -->
-        <!-- Start section9 -->
-        <section class="section9 container px-lg-0 mt-3 pb-5">
-            <div id="slider" class="carousel slide" data-bs-ride="carousel">
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators mb-lg-5">
-                    <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active me-3"></button>
-                    <button type="button" data-bs-target="#slider" data-bs-slide-to="1" class="me-3"></button>
-                    <button type="button" data-bs-target="#slider" data-bs-slide-to="2" class="me-3"></button>
-                    <button type="button" data-bs-target="#slider" data-bs-slide-to="3" class="me-3"></button>
-                    <button type="button" data-bs-target="#slider" data-bs-slide-to="4" class="me-3"></button>
-                    <button type="button" data-bs-target="#slider" data-bs-slide-to="5"></button>
-                </div>
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="box d-flex">
-                            <div class="card border-0">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/07-min.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">CAREERS</p>
-                                    <h4 class="card-title mb-2">Winning tactics for a new digital agency</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                            <div class="card border-0 mx-3">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/index3.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">DESIGN / UX</p>
-                                    <h4 class="card-title mb-2">How to drive your customer experirnce</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                            <div class="card border-0">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/05-min.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">CAREERS</p>
-                                    <h4 class="card-title mb-2">How to be more productive using notes</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="box d-flex">
-                            <div class="card border-0">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/index.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">MARKETING</p>
-                                    <h4 class="card-title mb-2">Choose from meeting speak, client feedback</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                            <div class="card border-0 mx-3">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/06-min.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">DESIGN / UX</p>
-                                    <h4 class="card-title mb-2">How to make your product stand out</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                            <div class="card border-0">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/02-min.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">CAREERS / MARKETING</p>
-                                    <h4 class="card-title mb-2">How to become a best sale marketer in a</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="box d-flex">
-                            <div class="card border-0">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/07-min.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">CAREERS</p>
-                                    <h4 class="card-title mb-2">Winning tactics for a new digital agency</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                            <div class="card border-0 mx-3">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/index3.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">DESIGN / UX</p>
-                                    <h4 class="card-title mb-2">How to drive your customer experirnce</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                            <div class="card border-0">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/05-min.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">CAREERS</p>
-                                    <h4 class="card-title mb-2">How to be more productive using notes</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="box d-flex">
-                            <div class="card border-0">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/index.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">MARKETING</p>
-                                    <h4 class="card-title mb-2">Choose from meeting speak, client feedback</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                            <div class="card border-0 mx-3">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/06-min.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">DESIGN / UX</p>
-                                    <h4 class="card-title mb-2">How to make your product stand out</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                            <div class="card border-0">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/02-min.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">CAREERS / MARKETING</p>
-                                    <h4 class="card-title mb-2">How to become a best sale marketer in a</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="box d-flex">
-                            <div class="card border-0">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/07-min.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">CAREERS</p>
-                                    <h4 class="card-title mb-2">Winning tactics for a new digital agency</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                            <div class="card border-0 mx-3">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/index3.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">DESIGN / UX</p>
-                                    <h4 class="card-title mb-2">How to drive your customer experirnce</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                            <div class="card border-0">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/05-min.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">CAREERS</p>
-                                    <h4 class="card-title mb-2">How to be more productive using notes</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="box d-flex">
-                            <div class="card border-0">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/index.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">MARKETING</p>
-                                    <h4 class="card-title mb-2">Choose from meeting speak, client feedback</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                            <div class="card border-0 mx-3">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/06-min.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">DESIGN / UX</p>
-                                    <h4 class="card-title mb-2">How to make your product stand out</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                            <div class="card border-0">
-                                <div class="news-img">
-                                    <img class="card-img-top" src="./public/images/02-min.jpg" alt="Card image">
-                                </div>
-                                <div class="card-body p-0 mt-3">
-                                    <p class="card-text mb-2 text-danger">CAREERS / MARKETING</p>
-                                    <h4 class="card-title mb-2">How to become a best sale marketer in a</h4>
-                                    <p class="card-text text-secondary">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going …</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End section9 -->
-    </main>
-    <!-- End main tag -->
-    <!-- Start footer tag -->
-    <footer>
-        <section class="section1">
-            <div class="box d-flex justify-content-center align-items-center">
-                <div class="container py-5 px-lg-0">
+        <!-- End header tag -->
+        <!-- Start main tag -->
+        <main>
+            <!-- Start section1 -->
+            <section class="section1 py-3 px-lg-0 py-lg-5">
+                <div class="brand container my-5 my-lg-4">
                     <div class="row">
-                        <div class="content text-white col-12 col-lg-3 p-lg-0">
-                            <h1 class="caption pb-3 mb-0">Have A Project In Mind? Let’s Discuss.</h1>
-                            <p class="para my-4">Build your entire site in minutes and customize in real-time</p>
+                        <div class="img text-center text-lg-start col-6 col-lg-2 col-xl-2 pb-3 pb-xl-0">
+                            <img src="./public/images/01.png" alt="">
                         </div>
-                        <div class="button d-lg-flex align-items-center justify-content-end col-12 col-lg-3 p-lg-0">
-                            <buton class="btn btn-white btn-filerounded-1 py-3 px-5">Get a Quote Today</buton>
+                        <div class="img text-center col-6 col-lg-2 col-xl-2 pb-3 pb-xl-0">
+                            <img src="./public/images/02.png" alt="">
+                        </div>
+                        <div class="img text-center col-6 col-lg-2 col-xl-2 pb-3 pb-xl-0 ms-lg-auto m-xl-0">
+                            <img src="./public/images/03.png" alt="">
+                        </div>
+                        <div class="img text-center col-6 col-lg-2 col-xl-2 pb-3 pb-xl-0 me-lg-auto m-xl-0">
+                            <img src="./public/images/04.png" alt="">
+                        </div>
+                        <div class="img text-center col-6 col-lg-2 col-xl-2">
+                            <img src="./public/images/05.png" alt="">
+                        </div>
+                        <div class="img text-center text-lg-end col-6 col-lg-2 col-xl-2">
+                            <img src="./public/images/06.png" alt="">
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section2">
-            <div class="container px-lg-0">
-                <div class="row mx-auto">
-                    <p class="para text-center text-md-start col-12 col-md-6 text-white px-0 py-3 py-md-4 m-0"><span class="text">2018 &copy;</span> Gentium, <span class="text">All rights reserved.</span></p>
-                    <ul class="navbar-nav d-flex flex-row justify-content-center justify-content-md-end col-12 col-md-6 px-0 pb-3 py-md-4">
-                        <li class="nav-item pe-2">
-                            <a class="nav-link p-0" href="#">Terms of use</a>
-                        </li>
-                        <li class="nav-item px-2 px-sm-3">
-                            <a class="nav-link p-0" href="#">Privacy Policy</a>
-                        </li>
-                        <li class="nav-item ps-2">
-                            <a class="nav-link p-0" href="#">Cookie Policy</a>
-                        </li>
-                    </ul>
+            </section>
+            <!-- End section1 -->
+            <!-- Start section2 -->
+            <section class="section2 container py-3 px-lg-0 py-lg-4">
+                <div class="content text-center my-5 my-lg-4">
+                    <h1 class="heading pb-3 m-0">Digital Marketing Services</h1>
+                    <p class="para text-secondary pt-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing sed do
+                        eiusmod tempor<br />Lorem ipsum dolor sit amet, c adipiscing sed do eiusmod tempor.</p>
                 </div>
-            </div>
-        </section>
-    </footer>
-    <!-- End footer tag -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
-<!-- End body tag -->
+            </section>
+            <!-- End section2 -->
+            <!-- Start section3 -->
+            <section class="section3 container px-lg-0 pb-sm-5 mt-sm-4">
+                <div class="card-box row mx-auto">
+                    <div class="card border-0 rounded-0 col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
+                        <div class="content text-center h-100">
+                            <i class="fas fa-chess-knight"></i>
+                            <h3 class="heading">Digital Strategy</h3>
+                            <p class="para m-0">Lorem ipsum dolor sit amet elit. Tempore corrupti temporibus fuga earum
+                                asperiores.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 rounded-0 col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
+                        <div class="content text-center h-100">
+                            <i class="far fa-window-maximize"></i>
+                            <h3 class="heading">UX Design</h3>
+                            <p class="para m-0">Lorem ipsum dolor sit amet elit. Tempore corrupti temporibus fuga earum
+                                asperiores.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 rounded-0 col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
+                        <div class="content text-center h-100">
+                            <i class="fas fa-chart-line"></i>
+                            <h3 class="heading">Product Design</h3>
+                            <p class="para m-0">Lorem ipsum dolor sit amet elit. Tempore corrupti temporibus fuga earum
+                                asperiores.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 rounded-0 col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
+                        <div class="content text-center h-100">
+                            <i class="far fa-clipboard"></i>
+                            <h3 class="heading">Content Strategy</h3>
+                            <p class="para m-0">Lorem ipsum dolor sit amet elit. Tempore corrupti temporibus fuga earum
+                                asperiores.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 rounded-0 col-12 col-sm-6 col-lg-4 mb-4 mb-sm-0">
+                        <div class="content text-center h-100">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <h3 class="heading">Design & Concept</h3>
+                            <p class="para m-0">Lorem ipsum dolor sit amet elit. Tempore corrupti temporibus fuga earum
+                                asperiores.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 rounded-0 col-12 col-sm-6 col-lg-4">
+                        <div class="content text-center h-100">
+                            <i class="far fa-comments"></i>
+                            <h3 class="heading">Social Media</h3>
+                            <p class="para m-0">Lorem ipsum dolor sit amet elit. Tempore corrupti temporibus fuga earum
+                                asperiores.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End section3 -->
+            <!-- Start section4 -->
+            <section class="section4 d-md-flex bg-dark mt-5">
+                <div class="content container d-flex flex-column justify-content-between text-white">
+                    <h3 class="caption p-xl-0 mb-0">We're A Dynamic Team Of Marketing Experts.</h3>
+                    <p class="para">Nullam sollicitudin nisl at nunc tempor pulvinar. Quisque gravida, tellus eget fermentum
+                        tristique, neque ligula placerat diamAenean placerat.<br /><br />Enim adminim veniam, quis nostrud
+                        tation ullamco laboris consectetur adipiscing elit.</p>
+                    <button class="btn btn-white rounded-1 py-3 px-5">Read Our Story</button>
+                </div>
+                <div class="image">
+                    <div class="icon d-flex justify-content-center align-items-center w-100 h-100">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                </div>
+            </section>
+            <!-- End section4 -->
+            <!-- Start section5 -->
+            <section class="section5 container px-lg-0 py-lg-4 mt-xl-5">
+                <div class="content text-center my-5 my-lg-4">
+                    <h1 class="heading pb-3 m-0">Selected Projects</h1>
+                    <p class="para text-secondary pt-3 m-0">Lorem ipsum dolor sitvehicula felis, dolor sit amet, adipiscin
+                        <br />quis volutpat estni nuncase.</p>
+                </div>
+            </section>
+            <!-- End section5 -->
+            <!-- Start section6 -->
+            <section class="section6 container px-lg-0 pb-3 pb-lg-5 mt-sm-4 mb-sm-5">
+                <div class="card-box">
+                    <div class="card my-3 my-sm-0 w-100">
+                        <img class="card-img-top product" src="./public/images/index.jpg" alt="">
+                        <div
+                            class="card-img-overlay content text-white flex-column justify-content-center align-items-center">
+                            <h3 class="card-title">Product Design</h3>
+                            <p class="card-text">Design / Marketing</p>
+                        </div>
+                    </div>
+                    <div class="card my-3 my-sm-0 w-100">
+                        <img class="card-img-top product" src="./public/images/index2.jpg" alt="">
+                        <div
+                            class="card-img-overlay content text-white flex-column justify-content-center align-items-center">
+                            <h3 class="card-title">Minimal Watche</h3>
+                            <p class="card-text">App / Design</p>
+                        </div>
+                    </div>
+                    <div class="card my-3 my-sm-0 w-100">
+                        <img class="card-img-top product" src="./public/images/index3.jpg" alt="">
+                        <div
+                            class="card-img-overlay content text-white flex-column justify-content-center align-items-center">
+                            <h3 class="card-title">Red Jacket</h3>
+                            <p class="card-text">Architecture / Design</p>
+                        </div>
+                    </div>
+                    <div class="card my-3 my-sm-0 w-100">
+                        <img class="card-img-top product" src="./public/images/index4.jpg" alt="">
+                        <div
+                            class="card-img-overlay content text-white flex-column justify-content-center align-items-center">
+                            <h3 class="card-title">Nike Setup</h3>
+                            <p class="card-text">Architecture / Marketing</p>
+                        </div>
+                    </div>
+                    <div class="card my-3 my-sm-0 w-100">
+                        <img class="card-img-top product" src="./public/images/index5.jpg" alt="">
+                        <div
+                            class="card-img-overlay content text-white flex-column justify-content-center align-items-center">
+                            <h3 class="card-title">Porsche Panamera</h3>
+                            <p class="card-text">Design / Marketing</p>
+                        </div>
+                    </div>
+                    <div class="card mt-3 my-sm-0 w-100">
+                        <img class="card-img-top product" src="./public/images/index6.jpg" alt="">
+                        <div
+                            class="card-img-overlay content text-white flex-column justify-content-center align-items-center">
+                            <h3 class="card-title">Nike Red Product</h3>
+                            <p class="card-text">Concept / Design</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End section6 -->
+            <!-- Start section7 -->
+            <section class="section7 text-white text-center px-lg-0 mb-0 mt-5 mb-lg-5">
+                <div class="box">
+                    <div class="content container px-3 px-md-5 py-5">
+                        <h3 class="heading pb-3 m-0 py-lg-5">People Seems To Like Us</h3>
+                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                            <!-- Indicators/dots -->
+                            <div class="carousel-indicators mb-lg-3">
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="0"
+                                    class="active me-3"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="me-3"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                            </div>
+                            <!-- The slideshow/carousel -->
+                            <div class="carousel-inner mb-4">
+                                <div class="carousel-item w-100 active">
+                                    <div class="box1 mx-auto ">
+                                        <p class="para px-0 pb-4 m-0 mx-xl-5">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam,liquip ex ea commodo consequat.</p>
+                                        <div class="people d-flex flex-column justify-content-center align-items-center">
+                                            <img src="./public/images/people.jpg" alt="Los Angeles"
+                                                class=" rounded-circle people-img">
+                                            <p class="para mb-0 mt-1 mt-lg-4">DYLAN GILLIS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item w-100">
+                                    <div class="box1 mx-auto">
+                                        <p class="para px-0 pb-4 m-0 mx-xl-5">Click edit button to change this text. Lorem
+                                            ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                            ullamcorper mattis, pulvinar dapibus leo.</p>
+                                        <div class="people d-flex flex-column justify-content-center align-items-center">
+                                            <img src="./public/images/people.jpg" alt="Los Angeles"
+                                                class=" rounded-circle people-img">
+                                            <p class="para mb-0 mt-1 mt-lg-4">LUCA BRAVO</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item w-100">
+                                    <div class="box1 mx-auto">
+                                        <p class="para px-0 pb-4 m-0 mx-xl-5">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam,liquip ex ea commodo consequat.</p>
+                                        <div class="people d-flex flex-column justify-content-center align-items-center">
+                                            <img src="./public/images/people.jpg" alt="Los Angeles"
+                                                class=" rounded-circle people-img">
+                                            <p class="para mb-0 mt-1 mt-lg-4">MALTE WINGEN</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End section7 -->
+            <!-- Start section8 -->
+            <section class="section8 container py-3 px-lg-0 py-lg-4">
+                <div class="content text-center my-2 my-lg-4">
+                    <h1 class="heading pb-3 m-0 mt-4">Latest News.</h1>
+                    <p class="para text-secondary pt-3 m-0">Sed hendrerit vehicula felis, dolor sit amet, adipiscin <br>
+                        quis volutpat estni nuncase.</p>
+                </div>
+            </section>
+            <!-- End section8 -->
+            <!-- Start section9 -->
+            <section class="section9 container px-lg-0 mt-3 pb-5">
+                <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators mb-lg-5">
+                        <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active me-3"></button>
+                        <button type="button" data-bs-target="#slider" data-bs-slide-to="1" class="me-3"></button>
+                        <button type="button" data-bs-target="#slider" data-bs-slide-to="2" class="me-3"></button>
+                        <button type="button" data-bs-target="#slider" data-bs-slide-to="3" class="me-3"></button>
+                        <button type="button" data-bs-target="#slider" data-bs-slide-to="4" class="me-3"></button>
+                        <button type="button" data-bs-target="#slider" data-bs-slide-to="5"></button>
+                    </div>
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="box d-flex">
+                                <div class="card border-0">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/07-min.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">CAREERS</p>
+                                        <h4 class="card-title mb-2">Winning tactics for a new digital agency</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mx-3">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/index3.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">DESIGN / UX</p>
+                                        <h4 class="card-title mb-2">How to drive your customer experirnce</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                                <div class="card border-0">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/05-min.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">CAREERS</p>
+                                        <h4 class="card-title mb-2">How to be more productive using notes</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box d-flex">
+                                <div class="card border-0">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/index.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">MARKETING</p>
+                                        <h4 class="card-title mb-2">Choose from meeting speak, client feedback</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mx-3">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/06-min.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">DESIGN / UX</p>
+                                        <h4 class="card-title mb-2">How to make your product stand out</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                                <div class="card border-0">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/02-min.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">CAREERS / MARKETING</p>
+                                        <h4 class="card-title mb-2">How to become a best sale marketer in a</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box d-flex">
+                                <div class="card border-0">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/07-min.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">CAREERS</p>
+                                        <h4 class="card-title mb-2">Winning tactics for a new digital agency</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mx-3">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/index3.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">DESIGN / UX</p>
+                                        <h4 class="card-title mb-2">How to drive your customer experirnce</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                                <div class="card border-0">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/05-min.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">CAREERS</p>
+                                        <h4 class="card-title mb-2">How to be more productive using notes</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box d-flex">
+                                <div class="card border-0">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/index.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">MARKETING</p>
+                                        <h4 class="card-title mb-2">Choose from meeting speak, client feedback</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mx-3">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/06-min.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">DESIGN / UX</p>
+                                        <h4 class="card-title mb-2">How to make your product stand out</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                                <div class="card border-0">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/02-min.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">CAREERS / MARKETING</p>
+                                        <h4 class="card-title mb-2">How to become a best sale marketer in a</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box d-flex">
+                                <div class="card border-0">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/07-min.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">CAREERS</p>
+                                        <h4 class="card-title mb-2">Winning tactics for a new digital agency</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mx-3">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/index3.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">DESIGN / UX</p>
+                                        <h4 class="card-title mb-2">How to drive your customer experirnce</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                                <div class="card border-0">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/05-min.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">CAREERS</p>
+                                        <h4 class="card-title mb-2">How to be more productive using notes</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box d-flex">
+                                <div class="card border-0">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/index.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">MARKETING</p>
+                                        <h4 class="card-title mb-2">Choose from meeting speak, client feedback</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                                <div class="card border-0 mx-3">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/06-min.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">DESIGN / UX</p>
+                                        <h4 class="card-title mb-2">How to make your product stand out</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                                <div class="card border-0">
+                                    <div class="news-img">
+                                        <img class="card-img-top" src="./public/images/02-min.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-body p-0 mt-3">
+                                        <p class="card-text mb-2 text-danger">CAREERS / MARKETING</p>
+                                        <h4 class="card-title mb-2">How to become a best sale marketer in a</h4>
+                                        <p class="card-text text-secondary">Bring to the table win-win survival strategies
+                                            to ensure proactive domination. At the end of the day, going …</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End section9 -->
+        </main>
+        <!-- End main tag -->
+        <!-- Start footer tag -->
+        <footer>
+            <section class="section1">
+                <div class="box d-flex justify-content-center align-items-center">
+                    <div class="container py-5 px-lg-0">
+                        <div class="row">
+                            <div class="content text-white col-12 col-lg-3 p-lg-0">
+                                <h1 class="caption pb-3 mb-0">Have A Project In Mind? Let’s Discuss.</h1>
+                                <p class="para my-4">Build your entire site in minutes and customize in real-time</p>
+                            </div>
+                            <div class="button d-lg-flex align-items-center justify-content-end col-12 col-lg-3 p-lg-0">
+                                <buton class="btn btn-white btn-filerounded-1 py-3 px-5">Get a Quote Today</buton>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section2">
+                <div class="container px-lg-0">
+                    <div class="row mx-auto">
+                        <p class="para text-center text-md-start col-12 col-md-6 text-white px-0 py-3 py-md-4 m-0"><span
+                                class="text">2018 &copy;</span> Gentium, <span class="text">All rights reserved.</span></p>
+                        <ul
+                            class="navbar-nav d-flex flex-row justify-content-center justify-content-md-end col-12 col-md-6 px-0 pb-3 py-md-4">
+                            <li class="nav-item pe-2">
+                                <a class="nav-link p-0" href="#">Terms of use</a>
+                            </li>
+                            <li class="nav-item px-2 px-sm-3">
+                                <a class="nav-link p-0" href="#">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item ps-2">
+                                <a class="nav-link p-0" href="#">Cookie Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!-- End footer tag -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+    </body>
+    <!-- End body tag -->
 </html>
