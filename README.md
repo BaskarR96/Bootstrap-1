@@ -1,5 +1,7 @@
 # Digimark
+
   This is a simple dummy digital marketing webpage created using HTML, Bootstrap, and SCSS. The project serves as a starting point for anyone looking to build a basic digital marketing website with a responsive design and enhanced styling.
+  
 # Features
 
   - HTML Structure: Utilizes clean and organized HTML structure for content presentation.
